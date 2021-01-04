@@ -2,7 +2,6 @@ import React from "react";
 import "./ProgressBar.scss";
 function ProgressBar({ percentage, status }) {
   function selectColor() {
-    console.log(status);
     switch (status) {
       case "SUCCESS_PRIMARY":
         return "success";

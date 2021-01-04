@@ -12,7 +12,9 @@ function ScoreRow({ data }) {
     <div className="score-row">
       <div className="score-row__container">
         <span>&</span>
-        <ProgressBar percentage={percentage} status={scoreColor} />
+        {percentage && (
+          <ProgressBar percentage={percentage} status={scoreColor} />
+        )}
       </div>
       <div className="score-row__container">
         <span className="score-row__title">{title}</span>

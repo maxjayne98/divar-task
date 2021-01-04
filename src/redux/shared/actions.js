@@ -11,3 +11,13 @@ export const fetchUser = () => async (dispatch) => {
     console.log("error has happend!!");
   }
 };
+
+export const fetchWidgets = () => async (dispatch) => {
+  try {
+    await api.getWidgets().then((res) => {
+      return dispatch(sharedActions.successWidgets(res.data));
+    });
+  } catch (e) {
+    console.log("error has happend!!");
+  }
+};

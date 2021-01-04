@@ -8,6 +8,13 @@ const api = {
       method: "GET",
     });
   },
+  getWidgets: () => {
+    return request({
+      baseURL: "http://localhost:3000/api/v1/",
+      url: `widgets`,
+      method: "GET",
+    });
+  },
 };
 
 export default api;

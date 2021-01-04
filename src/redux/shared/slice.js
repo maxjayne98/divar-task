@@ -3,6 +3,7 @@ const initialState = {
   counter: 0,
   loading: false,
   users: [],
+  widgets: [],
   error: {},
 };
 
@@ -18,6 +19,9 @@ const sharedSlice = createSlice({
     },
     successUsers: (state, action) => {
       state.users = [...action.payload, ...state.users];
+    },
+    successWidgets: (state, action) => {
+      state.widgets = action.payload;
     },
   },
 });

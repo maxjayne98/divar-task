@@ -6,14 +6,6 @@ import ScoreRow from "../ScoreRow";
 import "./Widget.scss";
 
 function Widget({ data }) {
-  // const components = {
-  //   TITLE_ROW: <TitleRow />,
-  //   UNEXPANDABLE_ROW: {},
-  //   SECTION_DIVIDER_ROW: {},
-  //   SCORE_ROW: {},
-  // };
-  // const Component = components[data["widget_type"]];
-  console.log("widget");
   function switchRender(params) {
     switch (data["widget_type"]) {
       case "TITLE_ROW":
