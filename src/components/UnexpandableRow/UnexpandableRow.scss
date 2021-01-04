@@ -1,0 +1,10 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/extends";
+.unexpandable-row {
+  @extend .row;
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    color: $GRAY-700;
+  }
+}

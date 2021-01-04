@@ -1,0 +1,33 @@
+.progress-bar {
+  min-width: 60px;
+  border-radius: 8px;
+  position: relative;
+  background-color: #ededed;
+  margin-left: 4px;
+  &__background {
+    height: 10px;
+    display: flex;
+    align-items: stretch;
+    border-radius: 8px 0px 0px 8px;
+    z-index: 1;
+    &--success {
+      background-color: #457f3c;
+    }
+    &--warning {
+      background-color: #f3c34e;
+    }
+  }
+  &__levels {
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  &__level {
+    flex: 0 0 1px;
+    background-color: #fff;
+    height: 10px;
+  }
+}

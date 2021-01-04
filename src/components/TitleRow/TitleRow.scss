@@ -1,0 +1,9 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/extends";
+.title-row {
+  @extend .row;
+  text-align: right;
+  &__text {
+    color: $PRIMARY-COLOR;
+  }
+}

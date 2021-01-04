@@ -1,0 +1,7 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/extends";
+.section-divider-row {
+  //   @extend .row;
+  height: 2px;
+  background-color: $GRAY-700;
+}
